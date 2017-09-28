@@ -1,5 +1,3 @@
-import random
-
 # config
 low = 1
 high = 1000
@@ -15,17 +13,13 @@ def show_credits():
     pass
     
 def get_guess(current_low, current_high):
-    """
-    Return a truncated average of current low and high.
-    """
-    pass
+    g = (current_high + current_low) // 2
+    return g
+    
 
 def pick_number():
-    """
-    Ask the player to think of a number between low and high.
-    Then  wait until the player presses enter.
-    """
-    pass
+    print ("Think of a number between " + str(low) + " + str(high) + ".")
+    input ("Press enter to continue")
 
 def check_guess(guess):
     """
@@ -37,18 +31,19 @@ def check_guess(guess):
     """
 
 def show_result():
-    """
-    Says the result of the game. (The computer might always win.)
-    """
-    pass
+    if guess = "correct"
+    print ("Lit, I got it!")
+else:
+    print ("Dang, Ill get it next time!")
+
 
 def play_again():
     while True:
         decision = input("Would you like to play again? (y/n) ")
 
-        if decision == 'y' or decision == 'yes':
+        if decision.lower == 'y' or decision.lower == 'yes':
             return True
-        elif decision == 'n' or decision == 'no':
+        elif decision.lower == 'n' or decision.lower == 'no':
             return False
         else:
             print("I don't understand. Please enter 'y' or 'n'.")
@@ -65,11 +60,9 @@ def play():
         check = check_guess(guess)
 
         if check == -1:
-            # adjust current_low
-            pass
+            guess= current_low
         elif check == 1:
-            # adjust current_high
-            pass
+            guess= current_high
 
     show_result(guess, rand)
 

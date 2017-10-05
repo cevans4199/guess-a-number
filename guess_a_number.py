@@ -1,3 +1,12 @@
+#Guess a Number AI
+#You think of a number, computer tries to get it
+
+#9-25-2017
+
+#Courtney E.
+
+
+
 import random
 
 # config
